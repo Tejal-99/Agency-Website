@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Digital Marketing Agency</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXX');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for the entire page */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md p-4 md:p-6 lg:p-8 rounded-b-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo/Agency Name -->
+            <a href="index.html" class="text-2xl md:text-3xl font-bold text-indigo-700 mb-4 md:mb-0 rounded-md p-2">
+                Digital Pro
+            </a>
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-4 md:gap-6 text-lg">
+                    <li><a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 rounded-md p-2">Home</a></li>
+                    <li><a href="services.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 rounded-md p-2">Services</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 rounded-md p-2">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Contact Us Section -->
+    <main class="container mx-auto mt-8 p-4 md:p-8">
+        <section class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-indigo-700 mb-4">Get in Touch with Digital Pro</h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                Have a question, need a quote, or ready to start a project? Fill out the form below or reach out to us directly.
+            </p>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Contact Form -->
+            <div class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold text-indigo-700 mb-6">Send Us a Message</h2>
+                <form action="thankyou.html" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" required
+                               class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition-colors duration-200">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" required
+                               class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition-colors duration-200">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" name="phone"
+                               class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition-colors duration-200">
+                    </div>
+                    <div>
+                        <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Interested Service</label>
+                        <select id="service" name="service"
+                                class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition-colors duration-200">
+                            <option value="">Select a Service</option>
+                            <option value="seo">Search Engine Optimization (SEO)</option>
+                            <option value="ppc">PPC Advertising</option>
+                            <option value="smm">Social Media Marketing</option>
+                            <option value="content">Content Marketing</option>
+                            <option value="email">Email Marketing</option>
+                            <option value="web-dev">Website Design & Development</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                                  class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition-colors duration-200"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"
+                                class="w-full bg-indigo-700 text-white py-3 px-6 rounded-full font-bold text-lg hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold text-indigo-700 mb-6">Our Contact Details</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-700 mb-2">Office Location:</h3>
+                        <p class="text-gray-600">123 Digital Drive,</p>
+                        <p class="text-gray-600">Marketing City, DM 45678</p>
+                        <p class="text-gray-600">Country Name</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-700 mb-2">Phone:</h3>
+                        <p class="text-gray-600"><a href="tel:+1234567890" class="text-indigo-600 hover:underline">+1 (234) 567-890</a></p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-700 mb-2">Email:</h3>
+                        <p class="text-gray-600"><a href="mailto:info@digitalpro.com" class="text-indigo-600 hover:underline">info@digitalpro.com</a></p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-700 mb-2">Business Hours:</h3>
+                        <p class="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        <p class="text-gray-600">Saturday: 10:00 AM - 2:00 PM (by appointment)</p>
+                    </div>
+                </div>
+                <!-- Optional: Map Placeholder -->
+                <div class="mt-8">
+                    <h3 class="text-lg font-medium text-gray-700 mb-2">Find Us on Map:</h3>
+                    <div class="bg-gray-200 h-48 w-full rounded-md flex items-center justify-center text-gray-500">
+                        Map Placeholder (e.g., Google Maps iframe)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white p-6 md:p-8 mt-12 rounded-t-lg">
+        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
+            <p class="mb-4 md:mb-0 text-sm md:text-base">&copy; 2025 Digital Pro. All rights reserved.</p>
+            <div class="flex justify-center md:justify-end space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
