@@ -3,185 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Digital Marketing Agency</title>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXX');</script>
-    <!-- End Google Tag Manager -->
+    <title>Digital Marketing Agency - Services</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Custom font for the entire page */
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        /* Custom styles for active navigation link */
+        .nav-link.active {
+            @apply text-blue-600 border-b-2 border-blue-600;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<body class="text-gray-800">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 fixed w-full z-10">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="text-2xl font-bold text-blue-700">DigitalMarkPro</a>
 
-    <!-- Header Section -->
-    <header class="bg-white shadow-md p-4 md:p-6 lg:p-8 rounded-b-lg">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <!-- Logo/Agency Name -->
-            <a href="index.html" class="text-2xl md:text-3xl font-bold text-indigo-700 mb-4 md:mb-0 rounded-md p-2">
-                Digital Pro
-            </a>
-            <!-- Navigation -->
-            <nav>
-                <ul class="flex flex-wrap justify-center gap-4 md:gap-6 text-lg">
-                    <li><a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 rounded-md p-2">Home</a></li>
-                    <li><a href="services.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 rounded-md p-2">Services</a></li>
-                    <li><a href="contact.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 rounded-md p-2">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
+            <!-- Navigation Links -->
+            <div class="space-x-6">
+                <a href="index.html" class="nav-link text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Home</a>
+                <a href="services.html" class="nav-link text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300 active">Services</a>
+                <a href="contact.html" class="nav-link text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Contact Us</a>
+            </div>
+        </nav>
     </header>
 
-    <!-- Main Content - Services Section -->
-    <main class="container mx-auto mt-8 p-4 md:p-8">
-        <section class="text-center mb-12">
-            <h1 class="text-3xl md:text-4xl font-bold text-indigo-700 mb-4">Our Comprehensive Digital Marketing Services</h1>
-            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                We offer a full suite of digital marketing solutions designed to elevate your brand, attract new customers, and drive measurable results.
-            </p>
-        </section>
+    <!-- Main Content Area - Services Page Section -->
+    <main class="pt-20"> <!-- Padding top to account for fixed header -->
+        <section id="services-page" class="bg-white py-16 px-6 md:px-12 rounded-lg shadow-md mx-auto my-8 max-w-6xl">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">Our Digital Marketing Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1: SEO -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-blue-600 mb-4">Search Engine Optimization (SEO)</h3>
+                        <p class="text-gray-700 mb-4">
+                            Improve your visibility on search engines and drive organic traffic to your website.
+                            We focus on keyword research, on-page optimization, technical SEO, and link building.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Keyword Research & Strategy</li>
+                            <li>On-Page & Technical SEO</li>
+                            <li>Link Building & Outreach</li>
+                            <li>Local SEO</li>
+                        </ul>
+                    </div>
 
-        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <!-- Service Block 1: SEO -->
-            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
-                <div class="text-indigo-600 text-5xl mb-4">🔍</div>
-                <h2 class="text-2xl font-semibold text-indigo-700 mb-3">Search Engine Optimization (SEO)</h2>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Improve your website's visibility on search engines like Google and Bing. Our SEO strategies focus on keyword research, on-page optimization, technical SEO, and quality link building to drive organic traffic.
-                </p>
-                <ul class="text-gray-600 list-disc list-inside text-left w-full max-w-xs mb-4">
-                    <li>Keyword Research & Strategy</li>
-                    <li>On-Page & Technical SEO</li>
-                    <li>Local SEO Optimization</li>
-                    <li>Content Strategy & Optimization</li>
-                </ul>
-                <a href="contact.html" class="mt-auto inline-block bg-indigo-500 text-white hover:bg-indigo-700 font-bold py-2 px-5 rounded-full shadow-md transition-colors duration-300">
-                    Learn More
-                </a>
+                    <!-- Service Card 2: Social Media Marketing -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-blue-600 mb-4">Social Media Marketing</h3>
+                        <p class="text-gray-700 mb-4">
+                            Engage with your audience, build brand awareness, and drive conversions across popular social platforms.
+                            From content creation to ad campaigns, we've got you covered.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Social Media Strategy</li>
+                            <li>Content Creation & Curation</li>
+                            <li>Community Management</li>
+                            <li>Paid Social Campaigns</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 3: Content Marketing -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-blue-600 mb-4">Content Marketing</h3>
+                        <p class="text-gray-700 mb-4">
+                            Create valuable, relevant, and consistent content to attract and retain a clearly defined audience.
+                            Blogs, videos, infographics, and more.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Blog Writing & Management</li>
+                            <li>Video Production</li>
+                            <li>Infographics & Visual Content</li>
+                            <li>Content Strategy Development</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 4: Pay-Per-Click (PPC) Advertising -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-blue-600 mb-4">PPC Advertising</h3>
+                        <p class="text-gray-700 mb-4">
+                            Maximize your ROI with targeted pay-per-click campaigns on Google Ads and other platforms.
+                            We manage bids, keywords, and ad copy for optimal performance.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Google Ads Management</li>
+                            <li>Bing Ads Management</li>
+                            <li>Remarketing Campaigns</li>
+                            <li>Ad Copy & Landing Page Optimization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 5: Email Marketing -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-blue-600 mb-4">Email Marketing</h3>
+                        <p class="text-gray-700 mb-4">
+                            Build strong customer relationships and drive sales through effective email campaigns.
+                            From list segmentation to automation, we handle it all.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Email Campaign Strategy</li>
+                            <li>Newsletter Design & Content</li>
+                            <li>Audience Segmentation</li>
+                            <li>Automation & Drip Campaigns</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 6: Web Design & Development -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-blue-600 mb-4">Web Design & Development</h3>
+                        <p class="text-gray-700 mb-4">
+                            Create stunning, user-friendly, and conversion-optimized websites that represent your brand.
+                            Responsive design and seamless user experience are our priorities.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Responsive Web Design</li>
+                            <li>E-commerce Solutions</li>
+                            <li>Website Maintenance</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <!-- Service Block 2: PPC Advertising -->
-            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
-                <div class="text-indigo-600 text-5xl mb-4">💰</div>
-                <h2 class="text-2xl font-semibold text-indigo-700 mb-3">Pay-Per-Click (PPC) Advertising</h2>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Get immediate results with highly targeted advertising campaigns. We manage Google Ads, social media ads, and other platforms to maximize your return on ad spend.
-                </p>
-                <ul class="text-gray-600 list-disc list-inside text-left w-full max-w-xs mb-4">
-                    <li>Google Ads Management</li>
-                    <li>Social Media Ad Campaigns</li>
-                    <li>Remarketing Strategies</li>
-                    <li>Ad Copy & Creative Development</li>
-                </ul>
-                <a href="contact.html" class="mt-auto inline-block bg-indigo-500 text-white hover:bg-indigo-700 font-bold py-2 px-5 rounded-full shadow-md transition-colors duration-300">
-                    Learn More
-                </a>
-            </div>
-
-            <!-- Service Block 3: Social Media Marketing -->
-            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
-                <div class="text-indigo-600 text-5xl mb-4">📢</div>
-                <h2 class="text-2xl font-semibold text-indigo-700 mb-3">Social Media Marketing</h2>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Build a strong brand presence and engage with your audience on popular social media platforms. We handle content creation, community management, and paid social campaigns.
-                </p>
-                <ul class="text-gray-600 list-disc list-inside text-left w-full max-w-xs mb-4">
-                    <li>Social Media Strategy</li>
-                    <li>Content Creation & Scheduling</li>
-                    <li>Community Management</li>
-                    <li>Influencer Marketing</li>
-                </ul>
-                <a href="contact.html" class="mt-auto inline-block bg-indigo-500 text-white hover:bg-indigo-700 font-bold py-2 px-5 rounded-full shadow-md transition-colors duration-300">
-                    Learn More
-                </a>
-            </div>
-
-            <!-- Service Block 4: Content Marketing -->
-            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
-                <div class="text-indigo-600 text-5xl mb-4">✍️</div>
-                <h2 class="text-2xl font-semibold text-indigo-700 mb-3">Content Marketing</h2>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Attract and retain a clearly defined audience through the creation and distribution of valuable, relevant, and consistent content.
-                </p>
-                <ul class="text-gray-600 list-disc list-inside text-left w-full max-w-xs mb-4">
-                    <li>Blog Writing & Article Creation</li>
-                    <li>Video & Infographic Production</li>
-                    <li>Whitepapers & Ebooks</li>
-                    <li>Content Distribution</li>
-                </ul>
-                <a href="contact.html" class="mt-auto inline-block bg-indigo-500 text-white hover:bg-indigo-700 font-bold py-2 px-5 rounded-full shadow-md transition-colors duration-300">
-                    Learn More
-                </a>
-            </div>
-
-            <!-- Service Block 5: Email Marketing -->
-            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
-                <div class="text-indigo-600 text-5xl mb-4">📧</div>
-                <h2 class="text-2xl font-semibold text-indigo-700 mb-3">Email Marketing</h2>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Build strong customer relationships and drive conversions with effective email marketing campaigns.
-                </p>
-                <ul class="text-gray-600 list-disc list-inside text-left w-full max-w-xs mb-4">
-                    <li>Newsletter Design & Management</li>
-                    <li>Automated Email Workflows</li>
-                    <li>List Segmentation</li>
-                    <li>A/B Testing & Optimization</li>
-                </ul>
-                <a href="contact.html" class="mt-auto inline-block bg-indigo-500 text-white hover:bg-indigo-700 font-bold py-2 px-5 rounded-full shadow-md transition-colors duration-300">
-                    Learn More
-                </a>
-            </div>
-
-            <!-- Service Block 6: Website Design & Development -->
-            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
-                <div class="text-indigo-600 text-5xl mb-4">💻</div>
-                <h2 class="text-2xl font-semibold text-indigo-700 mb-3">Website Design & Development</h2>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Create a stunning, user-friendly, and SEO-optimized website that serves as the foundation for your digital presence.
-                </p>
-                <ul class="text-gray-600 list-disc list-inside text-left w-full max-w-xs mb-4">
-                    <li>Responsive Website Design</li>
-                    <li>E-commerce Solutions</li>
-                    <li>Website Maintenance</li>
-                    <li>User Experience (UX) Optimization</li>
-                </ul>
-                <a href="contact.html" class="mt-auto inline-block bg-indigo-500 text-white hover:bg-indigo-700 font-bold py-2 px-5 rounded-full shadow-md transition-colors duration-300">
-                    Learn More
-                </a>
-            </div>
-        </section>
-
-        <!-- Call to Action Section -->
-        <section class="bg-indigo-50 text-center p-6 md:p-10 rounded-lg shadow-inner">
-            <h2 class="text-3xl font-bold text-indigo-700 mb-4">Ready to Boost Your Digital Performance?</h2>
-            <p class="text-lg text-gray-700 mb-6 max-w-xl mx-auto">
-                Let's discuss how our tailored strategies can help you achieve your specific business objectives.
-            </p>
-            <a href="contact.html" class="inline-block bg-indigo-700 text-white hover:bg-indigo-800 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
-                Get Your Custom Strategy
-            </a>
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white p-6 md:p-8 mt-12 rounded-t-lg">
-        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
-            <p class="mb-4 md:mb-0 text-sm md:text-base">&copy; 2025 Digital Pro. All rights reserved.</p>
-            <div class="flex justify-center md:justify-end space-x-4">
-                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privacy Policy</a>
-                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Terms of Service</a>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12 mt-8 rounded-t-lg shadow-inner">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 DigitalMarkPro. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
             </div>
         </div>
     </footer>
